@@ -1,26 +1,22 @@
 $(document).ready(function() {
-  $('button').click(function() {
+  $('#button').click(function() {
     $('.empty').hide();
     var text1 = $('#one').val();
     var text2 = $('#two').val();
     if (text1 && text2) {
     $('#list').append(
-      '<div class="cards">'+
-        '<div class="cards1">'+
-          '<button class="clear-button">'+
-          '</button>'+
-          '<button class="switch">'+
-          '</button>'+
-          text1+
-        '</div>'+
-        '<div class="cards2">'+
-          text2+
-        '</div>'+
-      '</div>');
-    $('.switch').off();
+      '<h5 class="card-title">'+
+        text1+
+      '</h5>'+
+      '<p class="card-text">'+
+      text2+
+      '</p>');
     }
-    else { 
+    else {
       alert('Заполните форму');
     }
+    $('#clear-button').click(function() {
+			$(this).parents('.cards').remove();
+		});
   });
 });
