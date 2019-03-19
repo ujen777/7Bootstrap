@@ -12,27 +12,36 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-6 offset-6">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Специальный заголовок</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Переход куда-нибудь</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
           <div class="card">
             <div class="card-header">
               Название
             </div>
             <div class="card-body">
               <form class="was-validated">
-                  <div class="form-row">
-                    <label for="one">Тинькофф Путешествия</label>
-                    <input type="text" class="form-control" id="one" placeholder="Ну купи!" required>
+                <div class="form-row">
+                  <label for="one">Тинькофф Путешествия</label>
+                  <input type="text" class="form-control" id="one" placeholder="Ну купи!" required>
+                </div>
+                <div class="form-row">
+                  <label for="two">Купить билет</label>
+                  <textarea class="form-control" id="two" rows="3" placeholder="Попробуй купить билет!" required></textarea>
+                  <div class="invalid-tooltip">
+                    Выберите билет
                   </div>
-                  <div class="form-row">
-                    <label for="two">Купить билет</label>
-                    <textarea class="form-control" id="two" rows="3" placeholder="Попробуй купить билет!" required></textarea>
-                    <div class="invalid-tooltip">
-                      Выберите билет
-                    </div>
-                  </div>
-                  <br><br>
-                  <button type="submit" class="btn btn-primary">Оплатить</button>
-                </form>
+                </div>
+                <br><br>
+                <button type="submit" class="btn btn-primary">Оплатить</button>
+              </form>
             </div>
           </div>
         </div>
