@@ -4,28 +4,37 @@
     <meta charset="utf-8">
     <title>7Bootstrap</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="bootstrap.js"></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-6 offset-6">
-          <form class="was-validated">
-            <div class="form-row">
-              <label for="one">Тинькофф Путешествия</label>
-              <input type="text" class="form-control" id="one" placeholder="Ну купи!" required>
+          <div class="card">
+            <div class="card-header">
+              Название
             </div>
-            <div class="form-row">
-              <label for="two">Купить билет</label>
-              <textarea class="form-control" id="two" rows="3" placeholder="Попробуй купить билет!" required></textarea>
-              <div class="invalid-tooltip">
-                Выберите билет
-              </div>
+            <div class="card-body">
+              <form class="was-validated">
+                  <div class="form-row">
+                    <label for="one">Тинькофф Путешествия</label>
+                    <input type="text" class="form-control" id="one" placeholder="Ну купи!" required>
+                  </div>
+                  <div class="form-row">
+                    <label for="two">Купить билет</label>
+                    <textarea class="form-control" id="two" rows="3" placeholder="Попробуй купить билет!" required></textarea>
+                    <div class="invalid-tooltip">
+                      Выберите билет
+                    </div>
+                  </div>
+                  <br><br>
+                  <button type="submit" class="btn btn-primary">Оплатить</button>
+                </form>
             </div>
-            <button type="submit" class="btn btn-primary">Оплатить</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
