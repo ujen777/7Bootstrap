@@ -12,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6 offset-6">
-          <form class="needs-validation">
+          <form class="was-validated">
             <div class="form-row">
               <label for="one">Тинькофф Путешествия</label>
               <input type="text" class="form-control" id="one" placeholder="Ну купи!" required>
@@ -21,7 +21,7 @@
               <label for="two">Купить билет</label>
               <textarea class="form-control" id="two" rows="3" placeholder="Попробуй купить билет!" required></textarea>
               <div class="invalid-tooltip">
-                Please provide a valid city.
+                Выберите билет
               </div>
             </div>
             <button type="submit" class="btn btn-primary">Оплатить</button>
@@ -29,59 +29,5 @@
         </div>
       </div>
     </div>
-    <form class="needs-validation" novalidate>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label for="validationTooltip01">Имя</label>
-          <input type="text" class="form-control" id="validationTooltip01" placeholder="Имя" value="Mark" required>
-          <div class="valid-tooltip">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationTooltip02">Фамилия</label>
-          <input type="text" class="form-control" id="validationTooltip02" placeholder="Фамилия" value="Otto" required>
-          <div class="valid-tooltip">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <label for="validationTooltipUsername">Имя пользователя</label>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-            </div>
-            <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Имя пользователя" aria-describedby="validationTooltipUsernamePrepend" required>
-            <div class="invalid-tooltip">
-              Please choose a unique and valid username.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="validationTooltip03">City</label>
-          <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
-          <div class="invalid-tooltip">
-            Please provide a valid city.
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationTooltip04">State</label>
-          <input type="text" class="form-control" id="validationTooltip04" placeholder="State" required>
-          <div class="invalid-tooltip">
-            Please provide a valid state.
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <label for="validationTooltip05">Zip</label>
-          <input type="text" class="form-control" id="validationTooltip05" placeholder="Zip" required>
-          <div class="invalid-tooltip">
-            Please provide a valid zip.
-          </div>
-        </div>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
   </body>
 </html>
